@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>FinanceFriend</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <script src="https://kit.fontawesome.com/7bc3df576e.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <h1 id="logo">Finance<span>Friend</span></h1>
+  <nav id="main-nav">
+    <ul>
+      <li>General</li>
+      <li>Instituitions</li>
+      <li>Credit Cards</li>
+    </ul>
+  </nav>
+
+  <div id="month-select">
+    Escolha o mês de referência
+    <input type="month">
+  </div>
+
+  <div id="content">
+    <div id="gain-box" class="gain_bill_boxes">
+      <h2>Entradas - </h2>
+      <h2 id="gain-total">R$ 0,00</h2>
+      <button id="add_value_gain" class="add_value">Adicionar valor</button>
+      <ul id="gain-list">
+        <!-- <li>
+          <span class="gain-value">R$ 4.235,56</span>
+          <span class="gain-desc">Salário</span>
+        </li> -->
+      </ul>
+    </div>
+
+    <div id="bill-box" class="gain_bill_boxes">
+      <h2>Saída - </h2>
+      <h2 id="bill-total">R$ 0,00</h2>
+      <button id="add_value_bill" class="add_value">Adicionar valor</button>
+      <ul id="bill-list">
+        <!-- <li>
+          <span class="bill-value">R$ 2.405,15</span>
+          <span class="bill-desc">Conta</span>
+        </li> -->
+      </ul>
+    </div>
+  </div>
+
+  <div id="add_value_box" class="gain">
+    <!-- DEBUG -->
+    <i class="fa-solid fa-caret-left"></i>
+    <h1>Novo valor</h1>
+
+    <div id="description_field">
+      <input id="description" type="text" placeholder="Dê um nome para esta entrada">
+    </div>
+
+    <div id="value_field">
+      <h2>R$</h2>
+      <input id="value" type="number" value="0.00" step="0.01" max="9999999999" min="0.01">
+    </div>
+
+
+
+    <div id="button_field">
+      <button id="btn_confirm_gain">Confirmar</button>
+      <button id="btn_confirm_bill">Confirmar</button>
+      <button id="btn_modify">Modificar</button>
+      <button id="btn_delete">Excluir</button>
+      <button id="btn_cancel">Cancelar</button>
+    </div>
+  </div>
+
+  <!-- <div id="value_details">
+    <h1>Detalhes do Valor</h1>
+    <h2 id="value_details_title">R$ 0,00</h2>
+  </div> -->
+</body>
+
+<div id="darkscreen"></div>
+
+</html>
+<script src="script.js"></script>
